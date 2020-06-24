@@ -1,0 +1,100 @@
+
+<html lang="en">
+<script src="https://use.fontawesome.com/efd3c3cf89.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John</title>
+  <link rel="stylesheet" href="C:\Users\johng\OneDrive\Desktop\FuboLmao\css\styles.css">
+</head>
+<style>A{text-decoration: none;}
+
+</style>
+<body>
+
+
+
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+  <div id="navbar">
+
+    <script type="text/javascript">
+      let progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+
+
+
+  <a href="">Home</a>
+  <a href="#Services">Services</a>
+  <a href="#Products">Products</a>
+  <a href="#Contact">Contact</a>
+</div>
+  <div class="container">
+      <div class="menu">
+        <ul>
+          <div class="logo"><img src="images\bricktop.png"></div>
+          <b href="">Home</b>
+          <a href="#Services">Services</a>
+          <a href="#Products">Products</a>
+          <a href="#Contact">Contact</a>
+        </ul>
+      </div>
+      <div class="banner">
+          <div class="App-text">
+              <h1>FUBO pointy pointy pointy brocoli</h1>
+              <p>Who dat boi<br>who him is?</p>
+          </div>
+          <div class="app-picture">
+              <img src="images\fubo.png">
+          </div>
+  </div>
+  <div class="quick-links">
+    <ul>
+          <li><i class="fa fa-share-alt"></i><p>SHARE TO</p></li>
+          <li><i class="fa fa-audio-description"></i><p>RECENT NEWS</p></li>
+          <li><i class="fa fa-cog"></i><p>ANALYTICS</p></li>
+    </ul>
+  </div>
+  <div class="social-icons">
+    <ul>
+          <li><a href="#"><i class= "fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class= "fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class= "fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class= "fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+
+
+  <h2 id=""></h2>
+  <h3 id="Services">Services</h3>
+  <h4 id="Products">Products</h4>
+  <h5 id="Contact">Contact</h5>
+
+<script src="js\timeline1.js"></script>
+
+</body>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+    }
+  </script>
+
+</html>
