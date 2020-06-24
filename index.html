@@ -27,7 +27,7 @@
 
     <script type="text/javascript">
       let progress = document.getElementById('progressbar');
-      let totalHeight = document.body.scrollHeight;
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
       window.onscroll = function(){
         let progressHeight = (window.pageYOffset / totalHeight) * 100;
         progress.style.height = progressHeight + "%";
@@ -86,16 +86,6 @@
 
 </body>
 
-  <script>
-    window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-50px";
-      }
-    }
-  </script>
 
 </html>
