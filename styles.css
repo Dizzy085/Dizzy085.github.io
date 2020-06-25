@@ -24,15 +24,13 @@
     width: 5vw;
     height: 100%;
     background: rgba(255,255,255,0.05);
-
-
 }
 #progressbar
 {
   position: fixed;
   top: 0;
   right: 0;
-  width: 17px;
+  width: 5vw;
   height: 100%;
   background: rgb(220,206,237);
   background: linear-gradient(90deg, rgba(220,206,237,1) 27%, rgba(188,192,228,1) 90%);
@@ -61,7 +59,7 @@
   height: 100%;
   background: rgb(220,206,237);
   background: linear-gradient(90deg, rgba(220,206,237,1) 27%, rgba(188,192,228,1) 90%);
-  filter: blur(10px);
+  filter: blur(2vw);
   z-index: 1000;
 }
 #progressbar:after
@@ -74,12 +72,12 @@
   height: 100%;
   background: rgb(220,206,237);
   background: linear-gradient(90deg, rgba(220,206,237,1) 27%, rgba(188,192,228,1) 90%);
-  filter: blur(30px);
+  filter: blur(6vw);
   z-index: 1000;
 }
 
 .menu{
-  height: 100px;
+  height: 5vw;
   width: 100%;
   background: #e8e3dd;
 }
