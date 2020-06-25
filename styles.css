@@ -77,20 +77,20 @@
 }
 
 .menu{
-  height: 5vw;
+  height: 5vh;
   width: 100%;
   background: #e8e3dd;
 }
 
 .menu ul{
   display: inline-flex;
-  margin: 50px;
+  margin: 2vw;
 
 }
 
 
 .menu ul b{
-  margin: 0 20px;
+  margin: 0 2vw;
   color: #1CD2E2;
   cursor: pointer;
 }
