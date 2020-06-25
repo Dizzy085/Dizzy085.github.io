@@ -97,7 +97,7 @@
 .menu ul b:hover{
 background-color: #A6A3A7;
 color: cyan;
-padding: 14px 25px;
+padding: 3vh 4vw;
 text-align: center;
 text-decoration: none;
 display: inline-block;
@@ -106,23 +106,23 @@ display: inline-block;
 
 
 .menu ul a{
-  margin: 0 20px;
+  margin: 0 3vw;
   color: #6A666C;
   cursor: pointer;
 }
 .menu ul a:hover{
 background-color: #A6A3A7;
 color: cyan;
-padding: 14px 25px;
+padding: 3vh 4vw;
 text-align: center;
 text-decoration: none;
 display: inline-block;
 }
 
 .logo img{
-    width: 120px;
-    margin-top: -48px;
-    margin-right: 48px;
+    width: 5vw;
+    margin-top: -1vh;
+    margin-right: 0;
 }
 .active{
   color: #19bafa !important;
@@ -131,7 +131,7 @@ display: inline-block;
   width: 80%;
   height: 70%;
   top: 25%;
-  left: 130px;
+  left: 5vw;
   position: absolute;
   color: #fff;
 }
@@ -140,16 +140,16 @@ display: inline-block;
   float: left;
 }
 .App-text h1{
-  font-size: 43px;
-  width: 640px;
+  font-size: 4vh;
+  width: 20vw;
   position: relative;
-  margin-left: 10px;
+  margin-left: 2vw;
 }
 .App-text p{
-  width: 650px;
-  font-size: 15px;
-  margin: 30px 0 30px 10px;
-  line-height: 25px;
+  width: 5vw;
+  font-size: 2vh;
+  margin: 3vh 0 3vh 1vw;
+  line-height: 3vh;
   color: #919191;
 }
 .app-picture{
@@ -158,13 +158,13 @@ display: inline-block;
 }
 .app-picture img{
   width: 100%;
-  margin-top: -20px;
-  padding-left: 50px;
+  margin-top: -2vh;
+  padding-left: 2vw;
 }
 
 .quick-links{
-    border-radius: 6px;
-    left: -10px;
+    border-radius: 1vh;
+    left: -1vw;
     bottom: 0;
     position: absolute;
     background: linear-gradient(to right, #db1bf6, #19d7f8);
@@ -172,44 +172,43 @@ display: inline-block;
 
 .quick-links ul{
   display: inline-flex;
-  margin: 25px auto;
+  margin: 1vw auto;
   text-align: center;
 }
 
 .quick-links ul li{
   list-style: none;
-  margin: 0 50px;
+  margin: 0 3vw;
   cursor: pointer;
 }
 .quick-links ul li .fa{
-  font-size: 15px;
-  font-size: 10px;
+  font-size: 2vh;
   color: #fff;
 }
 
 .social-icons{
-  right: 72px;
-  bottom: 35px;
+  right: 10vw;
+  bottom: 3vh;
   position: absolute;
 }
 
 .social-icons ul li{
   list-style: none;
-  margin-top: 15px;
+  margin-top: 3vh;
   text-align: center;
 }
 
 .social-icons ul li a{
   color: #999;
   border-radius: 50%;
-  border: 1px solid #999;
-  padding: 5px;
+  border: .2vh solid #999;
+  padding: .5vh;
   display: block;
 }
 #navbar {
   background-color: #e8e3dd;
   position: fixed;
-  top: -50px;
+  top: -5vh;
   width: 100%;
   display: block;
   transition: top 0.3s;
@@ -221,30 +220,30 @@ display: inline-block;
   display: block;
   color: #1CD2E2;
   text-align: center;
-  padding: 15px;
+  padding: 1vw;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2vh;
   z-index: 1;
 }
 
 #navbar a:hover {
   background-color: #A6A3A7;
   color: cyan;
-  padding: 14px 25px;
+  padding: 2vh 1vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 
 h2{
-  height: 1400px;
+  height: 200vh;
 }
 h3{
-  height: 1600px;
+  height: 250vh;
 }
 h4{
-  height: 1800px;
+  height: 300vh;
 }
 h4{
-  height: 2000px;
+  height: 350vh;
 }
