@@ -1,8 +1,9 @@
-
 <html lang="en">
-
 <script src="https://use.fontawesome.com/efd3c3cf89.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -10,94 +11,164 @@
 </script>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>John</title>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brick Top Productions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <div class="container">
+      <div class='open'>
+          <p class="logo">Brick Top</p>
+      </div>
+          <a class="fa fa-angle-down" href="#about"></a>
+    </div>
+
+
+
+  <div class="menu">
+          <ul>
+            <a class="btn btn1" href="">Home</a>
+            <a class="btn btn2" href="#Services">Services</a>
+            <a class="btn btn3" href="#about">About</a>
+            <a class="btn btn4" href="#Contact">Contact</a>
+          </ul>
+        </div>
+  <div id="about"style="height:100vh;background-color:grey;font-size:3vh">
+        About Us
+    </div>
+
+
+
+<div id='companies'>
+  <div class="companies">
+  <div class='cards'>
+
+  <div class='card'>
+      <div class='imgBox' data-text='FuboTv'>
+        <img src='images\fubotv.png'>
+      </div>
+      <div class='content'>
+            <div>
+                <h1>FuboTv</h1>
+                <p>FuboTV is an American over-the-top internet television service that focuses primarily on channels that distribute live sports, including NFL, MLB, NBA, NHL, MLS and international soccer, plus news, network television series and movies.</p>
+                <a href='#'>Read More</a>
+            </div>
+      </div>
+  </div>
+
+  <div class='card'>
+      <div class='imgBox' data-text='Pulse'>
+        <img src='images\pulse.png'>
+      </div>
+      <div class='content'>
+            <div>
+                <h1>Pulse Evolution</h1>
+                <p>Pulse Evolution Corporation is a recognized pioneer and leading developer of hyper-realistic digital humans for entertainment, virtual reality, augmented reality and artificial intelligence.</p>
+                <a href='#'>Read More</a>
+            </div>
+      </div>
+  </div>
+
+  <div class='card'>
+      <div class='imgBox' data-text='Carolco'>
+        <img src='images\carolco.png'>
+      </div>
+      <div class='content'>
+            <div>
+                <h1>Carolco</h1>
+                <p>Carolco Pictures, Inc. is an American independent motion picture production company.</p>
+                <a href='#'>Read More</a>
+            </div>
+      </div>
+  </div>
+
+
+  <div class='card'>
+      <div class='imgBox' data-text='FaceBank'>
+        <img src='images\facebankgroup.png'>
+      </div>
+      <div class='content'>
+            <div>
+                <h1>FaceBank Group</h1>
+                <p>FaceBank Group, Inc. is a digital entertainment company. The Company is focused on offering consumers a live television (TV) streaming platform for sports, news and entertainment through its subsidiaries, which offer a subscription-based services. Facebank Group also develops digital human likeness for celebrities and consumers.</p>
+                <a href='#'>Read More</a>
+            </div>
+      </div>
+  </div>
+
+  <div class='card'>
+      <div class='imgBox' data-text='Recall'>
+        <img src='images\recall.png'>
+      </div>
+      <div class='content'>
+            <div>
+                <h1>Recall Studios</h1>
+                <p>Recall Studios, including its consolidated subsidiaries, is a globally recognized, market leading developer of hyper-realistic digital humans - computer generated assets that can be distributed across the full spectrum of traditional media and emerging display technologies.</p>
+                <a href='#'>Read More</a>
+            </div>
+      </div>
+  </div>
+  <div class='card'>
+      <div class='imgBox' data-text='High Five'>
+        <img src='images\highfive.png'>
+      </div>
+      <div class='content'>
+            <div>
+                <h1>High Five Entertainment</h1>
+                <p>Locally owned and operated bowling based family entertainment center, featuring two stories of bowling & laser tag, as well as arcade with redemption center plus a full service restaurant featuring new American cuisine, in a ranch industrial inspired FUN environment!</p>
+                <a href='#'>Read More</a>
+            </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+
+
 <style>A{text-decoration: none;}
 
 </style>
-<body>
-  <link rel="stylesheet" type="text/css" href="styles.css">
 
 
-  <div id="progressbar"></div>
-  <div id="scrollPath"></div>
-  <div id="navbar">
-
-    <script type="text/javascript">
-      let progress = document.getElementById('progressbar');
-      let totalHeight = document.body.scrollHeight - window.innerHeight;
-      window.onscroll = function(){
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-      }
-    </script>
-    <script>
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-50px";
-        }
-      }
-    </script>
-
-
-  <a href="">Home</a>
-  <a href="#Services">Services</a>
-  <a href="#Products">Products</a>
-  <a href="#Contact">Contact</a>
-</div>
-  <div class="container">
-      <div class="menu">
-        <ul>
-          <div class="logo"><img src="images\bricktop.png"></div>
-          <b href="">Home</b>
-          <a href="#Services">Services</a>
-          <a href="#Products">Products</a>
-          <a href="#Contact">Contact</a>
-        </ul>
-      </div>
-      <div class="banner">
-          <div class="App-text">
-              <h1>FUBO pointy pointy pointy brocoli</h1>
-              <p>Who dat boi<br>who him is?</p>
-          </div>
-          <div class="app-picture">
-              <img src="images\fubo.png">
-          </div>
-  </div>
-  <div class="quick-links">
-    <ul>
-          <li><i class="fa fa-share-alt"></i><p>SHARE TO</p></li>
-          <li><i class="fa fa-audio-description"></i><p>RECENT NEWS</p></li>
-          <li><i class="fa fa-cog"></i><p>ANALYTICS</p></li>
-    </ul>
-  </div>
-  <div class="social-icons">
-    <ul>
-          <li><a href="#"><i class= "fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class= "fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class= "fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class= "fa fa-instagram"></i></a></li>
-    </ul>
-  </div>
-
-
-  <h2 id=""></h2>
-  <h3 id="Services">Services</h3>
-  <h4 id="Products">Products</h4>
-  <h5 id="Contact">Contact</h5>
-
-<script src="js\timeline1.js"></script>
 
 
 
 </body>
 
+  <script>
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+      if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+        document.getElementById("menu").style.top = "0";
+      } else {
+        document.getElementById("menu").style.top = "-50px";
+      }
+    }
+  </script>
 
 </html>

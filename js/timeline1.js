@@ -2,7 +2,7 @@ const img = document.querySelector(".app-picture");
 const quicklinks = document.querySelector(".quick-links");
 const body = document.querySelector(".App-text");
 const socials = document.querySelector(".social-icons");
-const menu = document.querySelector(".menu");
+const navbar = document.querySelector(".navbar");
 const container = document.querySelector(".container");
 
 const tl = new TimelineMax();
@@ -15,7 +15,7 @@ tl.fromTo(container, 1,{height: "0%"}, {height:"100%", ease:Power2.easeInOut})
       {width: "100%", ease:Power2.easeInOut}
   )
   .fromTo(
-      menu,
+      navbar,
       1.2,
       {x: "-100%"},
       {x: "0%", ease:Power2.easeInOut},
