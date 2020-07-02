@@ -78,6 +78,7 @@ left: 50%;
 }
 
 .open{
+  /*please git work*/
   background-image: url("background.png");
   height: 100%;
   background-attachment: fixed;
