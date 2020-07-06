@@ -45,7 +45,7 @@ display: inline-block;
 
 position: absolute;
 
-text-shadow: 0 -20px transparent, 0 0px #fff;
+text-shadow: 0 -20px transparent, 0 0px #404242;
 
 text-decoration: none;
 
@@ -71,7 +71,7 @@ left: 50%;
 
 .fa-angle-down:hover{
 
-  text-shadow: 0 0px #fff, 0 60px transparent;
+  text-shadow: 0 0px #404242, 0 60px transparent;
 
   color: transparent;
 
