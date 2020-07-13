@@ -6,9 +6,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 html{
   scroll-behavior: smooth;
+
 }
 
 /*
@@ -57,7 +59,7 @@ cursor: pointer;
 
 position: absolute;
 top: 70%;
-left: 50%;
+left: 45%;
 
   animation: fadeinARROW 3s;
   /*
@@ -92,6 +94,8 @@ left: 50%;
   width: 100%;
   background: #252526;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .btn{
