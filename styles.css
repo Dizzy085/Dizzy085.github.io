@@ -324,8 +324,21 @@ left: 48.5%;
 
 .cards .card .content h1{
   margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 25px;
 }
+
+.cards .card1 .content p{
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.cards .card2 .content p{
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/*
+IF YOU CHOOSE TO ADD A READ MORE PART TO THE CARDS
+*STILL NEEDS WORK :P*
 
 .cards .card .content a{
   display: inline-block;
@@ -335,7 +348,7 @@ left: 48.5%;
   text-decoration: none;
   color: #fff;
 }
-
+*/
 
 @media (max-width:1700px)
 {
