@@ -99,8 +99,8 @@ left: 48.5%;
 
 }
 
-.open{
-  /*please git work*/
+.visibledevice {display:none;}
+.visibledesktop {display:display;
   background-image: url("images/BTbg.jpg");
 
   background-attachment: fixed;
@@ -109,6 +109,20 @@ left: 48.5%;
   background-size: 100vw 100vh;
   min-height: 130vh;
 }
+
+@media (max-width : 320px) {
+    .visibledevice {display:block;
+      background-image: url("images\bricktop.png");
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      min-height: 130vh;
+    }
+    .visibledesktop {display:none;}
+}
+
 .menu{
   height: 7vh;
   width: 100%;
