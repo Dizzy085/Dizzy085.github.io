@@ -435,6 +435,26 @@ img {vertical-align: middle;
   background-color: #bbb;
 }
 
+.about{
+  height: 70vh;
+  width: 100%;
+  background-color: grey;
+}
+
+.head{
+  font-size: 3em;
+  text-align: center;
+}
+
+.para{
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 1.5em;
+}
+
+
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 0.8s;
