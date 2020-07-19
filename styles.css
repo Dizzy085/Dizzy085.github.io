@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   zoom: 100%;
+
 }
 html{
   scroll-behavior: smooth;
@@ -38,36 +39,75 @@ html{
 */
 
 .container p{
-  font-size: 1.5vw;
+  font-size: 1vw;
   display: inline-block;
   position: absolute;
   text-shadow: 0 -20px transparent, 0 0px #404242;
   text-decoration: none;
   position: absolute;
-  top: 70%;
-  left: 52%;
+  top: 36%;
+  left: 39.5%;
   font-family: 'Baloo Da 2', cursive;
   animation: fadeinSUB 3s;
   color: white;
-  width: 30vw;
-  border: 1vh solid white;
-  padding: 2vh;
-  margin: 1vh;
+  width: 21vw;
+  border: .3vh solid white;
+  padding: 1vh;
+  margin: .5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img{
+  display: inline-block;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  margin-left: -204.05px;
+  height: 244.75px;
+  width: 410.85px;
 }
 
 
+
+
+.visibledevice {display:none;}
+.visibledesktop {display:display;
+background-image: url("background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  min-height: 70vh;
+
+}
+
+@media (max-width : 320px) {
+    .visibledevice {display:block;
+
+      background-image: url("background.png");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      min-height: 70vh;
+
+    }
+    .visibledesktop {display:none;}
+}
 
 .fa-angle-down {
 
 color: transparent;
 
-font-size: 12rem;
+font-size: 5rem;
 
 display: inline-block;
 
 position: absolute;
 
-text-shadow: 0 -20px transparent, 0 0px #404242;
+text-shadow: 0 -20px transparent, 0 0px white;
 
 text-decoration: none;
 
@@ -78,13 +118,14 @@ transition: all 0.3s;
 cursor: pointer;
 
 position: absolute;
-top: 85%;
-left: 48.5%;
+top: 53%;
+left: 49%;
 
   animation: fadeinARROW 4s;
   /*
   animation: arrowjiggle 3s linear infinite;
   */
+
 }
 
 
@@ -93,35 +134,13 @@ left: 48.5%;
 
 .fa-angle-down:hover{
 
-  text-shadow: 0 0px #404242, 0 60px transparent;
+  text-shadow: 0 0px white, 0 60px transparent;
 
   color: transparent;
 
 }
 
-.visibledevice {display:none;}
-.visibledesktop {display:display;
-  background-image: url("images/BTbg.jpg");
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  min-height: 130vh;
-}
-
-@media (max-width : 320px) {
-    .visibledevice {display:block;
-      background-image: url("images\bricktop.png");
-
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw 100vh;
-      min-height: 130vh;
-    }
-    .visibledesktop {display:none;}
-}
 
 .menu{
   height: 7vh;
@@ -131,7 +150,7 @@ left: 48.5%;
   position: sticky;
   top: 0;
   z-index: 100000000000000;
-  font-family: 'Baloo Da 2', cursive;
+  font-family: 'Mulish', sans-serif;
 }
 
 .btn{
@@ -161,22 +180,89 @@ left: 48.5%;
     transition: 0.8s;
 }
 
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+
+
+
+
+#loader{
+  background-color: #252526;
+  height: 100vh;
+  width: 100vw;
 }
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  margin-top: 560px;
+  margin-left: -37px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -377,13 +463,14 @@ IF YOU CHOOSE TO ADD A READ MORE PART TO THE CARDS
 
 .mySlides {display: none}
 img {vertical-align: middle;
-  max-width: 473px;
-  max-height: 343px;}
+  max-width: 756.8px;
+  max-height: 548.8px;}
 .slideshow-container {
-  max-width: 473px;
-  max-height: 343px;
+  max-width: 756.8px;
+  max-height: 548.8px;
   position: relative;
   margin: auto;
+  top: 4%;
 }
 
 .prev, .next {
@@ -410,47 +497,43 @@ img {vertical-align: middle;
   background-color: rgba(0,0,0,0.8);
 }
 
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #717171;
+  background-color: #bbb;
   border-radius: 25%;
   display: inline-block;
   transition: background-color 0.3s ease;
+  margin-top: 60px;
 }
 
 .active, .dot:hover {
-  background-color: #bbb;
+  background-color: #717171;
 }
 
 .about{
-  height: 70vh;
+  height: 85vh;
   width: 100%;
-  background-color: grey;
+  background-color: white;
+
 }
 
 .head{
-  font-size: 3em;
+  font-size: 5em;
   text-align: center;
+  font-family: 'Mulish', sans-serif;
+
 }
 
 .para{
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: 40px;
   margin-right: 40px;
   font-size: 1.5em;
+  font-family: 'Mulish', sans-serif;
 }
 
 
