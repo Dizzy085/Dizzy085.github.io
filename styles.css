@@ -77,7 +77,9 @@ background-image: url("background.png");
   background-attachment: fixed;
   background-repeat: repeat-y;
   background-size: 100vw 100vh;
+
   min-height: 1008px;
+  min-height: -webkit-fill-available;
 }
 /*
 @media (max-width : 320px) {
