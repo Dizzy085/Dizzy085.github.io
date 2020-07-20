@@ -71,13 +71,11 @@ html{
 .visibledesktop {display:display;
 background-image: url("background.png");
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  min-height: 70vh;
-
+  min-height: 1008px;
 }
-
+/*
 @media (max-width : 320px) {
     .visibledevice {display:block;
 
@@ -91,7 +89,7 @@ background-image: url("background.png");
     }
     .visibledesktop {display:none;}
 }
-
+*/
 .fa-angle-down {
 
 color: transparent;
@@ -138,7 +136,7 @@ left: 49%;
 
 
 .menu{
-  height: 7vh;
+  height: 100px;
   width: 100%;
   background: #252526;
   text-align: center;
@@ -155,14 +153,11 @@ left: 49%;
   justify-content: center;
   height: 3vh;
   width: 10vw;
-  border: .2vh solid #e8e3dd;
-  padding: .5vh 1vw;
   font-size: 25px;
-  font-family: 'Montserrat';
   cursor: pointer;
-  margin: 1vw;
+  margin-top: 2vh;
   transition: 0.01s;
-  font-family: 'Baloo Da 2', cursive;
+  font-family: 'Mulish', sans-serif;
   scroll-behavior: auto;
 }
 
@@ -170,8 +165,6 @@ left: 49%;
 
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover{
     color: #fc7f03;
-    border-radius: 3vw;
-    border: .2vh solid #fc7f03;
     transition: 0.8s;
 }
 
@@ -321,7 +314,8 @@ left: 49%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #222;
+  background: rgb(34,34,34);
+  background: linear-gradient(180deg, rgba(34,34,34,1) 17%, rgba(119,119,119,1) 97%);
   min-height: 100vh;
 }
 
@@ -456,16 +450,20 @@ IF YOU CHOOSE TO ADD A READ MORE PART TO THE CARDS
 
 
 
-.mySlides {display: none}
-img {vertical-align: middle;
+.mySlides {display: none;
+  background-color: #fff;
+  padding: 6px;}
+.mySlides img {vertical-align: middle;
   max-width: 756.8px;
-  max-height: 548.8px;}
+  max-height: 548.8px;
+}
 .slideshow-container {
   max-width: 756.8px;
   max-height: 548.8px;
   position: relative;
   margin: auto;
   top: 4%;
+
 }
 
 .prev, .next {
@@ -510,7 +508,7 @@ img {vertical-align: middle;
 }
 
 .about{
-  height: 85vh;
+  height: 1224px;
   width: 100%;
   background-color: #222;
 
@@ -557,6 +555,34 @@ img {vertical-align: middle;
   .prev, .next,.text {font-size: 11px}
 }
 
+@media (max-width:2560px)
+{
+  .container p{
+    font-size: 1.5vw;
+    text-shadow: 0 -20px transparent, 0 0px #404242;
+    top: 690px;
+    left: 37.6%;
+
+  }
+
+  .container img{
+    top: 6%;
+    left: 50%;
+    margin-left: -372px;
+    height: 480px;
+    width: 780px;
+    padding: 6px;
+  }
+  .visibledesktop {
+    background-size: 100vw 100vh;
+    min-height: 1000px;
+  }
+  .fa-angle-down {
+  top: 840px;
+  }
+}
+
+
 
 @media (max-width:1700px)
 {
@@ -575,6 +601,122 @@ img {vertical-align: middle;
   }
 .about p{
   font-size: 17px;
+}
+.container p{
+  font-size: 3vw;
+  display: inline-block;
+  position: absolute;
+  text-shadow: 0 -20px transparent, 0 0px #404242;
+  text-decoration: none;
+  position: absolute;
+  top: 550px;
+  left: 24%;
+  animation: fadeinSUB 3s;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+}
+.fa-angle-down {
+
+font-size: 3rem;
+
+text-shadow: 0 -20px transparent, 0 0px white;
+
+top: 700px;
+  left: 48%;
+
+
+}
+
+
+.fa-angle-down:hover{
+
+  text-shadow: 0 0px white, 0 40px transparent;
+
+  color: transparent;
+
+}
+
+.mySlides {display: none;
+  background-color: #fff;
+  padding: 6px;}
+  .mySlides img {vertical-align: middle;
+    max-width: 490px;
+    max-height: 390px;
+  }
+.slideshow-container {
+  max-width: 490px;
+  max-height: 390px;
+  position: relative;
+  margin: auto;
+  top: 4%;
+
+}
+
+.prev, .next {
+  top: 50%;
+  padding: 10px;
+  margin-top: -2px;
+  color: white;
+  font-size: 12px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 1px;
+  border-radius: 25%;
+  margin-top: 50px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.about{
+  height: 1200px;
+  width: 100%;
+  background-color: #222;
+
+}
+
+.head{
+  font-size: 3.8em;
+}
+
+.para{
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 1.8em;
+  font-family: 'Mulish', sans-serif;
+
+}
+.container img{
+  display: inline-block;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  margin-left: -230px;
+  height: 330px;
+  width: 460px;
+  background-color: #fff;
+  padding: 1.5px;
+}
+
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  margin-top: 450px;
+  margin-left: -35px;
 }
 }
 
@@ -596,6 +738,122 @@ img {vertical-align: middle;
   }
   .about p{
     font-size: 13px;
+  }
+  .container p{
+    font-size: 3vw;
+    display: inline-block;
+    position: absolute;
+    text-shadow: 0 -20px transparent, 0 0px #404242;
+    text-decoration: none;
+    position: absolute;
+    top: 550px;
+    left: 24%;
+    animation: fadeinSUB 3s;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+  }
+  .fa-angle-down {
+
+  font-size: 3rem;
+
+  text-shadow: 0 -20px transparent, 0 0px white;
+
+  top: 700px;
+    left: 48%;
+
+
+  }
+
+
+  .fa-angle-down:hover{
+
+    text-shadow: 0 0px white, 0 40px transparent;
+
+    color: transparent;
+
+  }
+
+  .mySlides {display: none;
+    background-color: #fff;
+    padding: 6px;}
+    .mySlides img {vertical-align: middle;
+      max-width: 520px;
+      max-height: 410px;
+    }
+  .slideshow-container {
+    max-width: 520px;
+    max-height: 410px;
+    position: relative;
+    margin: auto;
+    top: 4%;
+
+  }
+
+  .prev, .next {
+    top: 50%;
+    padding: 10px;
+    margin-top: -2px;
+    color: white;
+    font-size: 12px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 1px;
+    border-radius: 25%;
+    margin-top: 50px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .about{
+    height: 1200px;
+    width: 100%;
+    background-color: #222;
+
+  }
+
+  .head{
+    font-size: 3.4em;
+  }
+
+  .para{
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.4em;
+    font-family: 'Mulish', sans-serif;
+
+  }
+  .container img{
+    display: inline-block;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    margin-left: -230px;
+    height: 330px;
+    width: 460px;
+    background-color: #fff;
+    padding: 1.5px;
+  }
+
+
+  .lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: 450px;
+    margin-left: -35px;
   }
 }
 
@@ -619,6 +877,125 @@ img {vertical-align: middle;
   .about p{
     font-size: 11px;
   }
+  .container p{
+    font-size: 3vw;
+    display: inline-block;
+    position: absolute;
+    text-shadow: 0 -20px transparent, 0 0px #404242;
+    text-decoration: none;
+    position: absolute;
+    top: 550px;
+    left: 24%;
+    animation: fadeinSUB 3s;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+  }
+  .fa-angle-down {
+
+  font-size: 3rem;
+
+  text-shadow: 0 -20px transparent, 0 0px white;
+
+  top: 700px;
+    left: 48%;
+
+
+  }
+
+
+  .fa-angle-down:hover{
+
+    text-shadow: 0 0px white, 0 40px transparent;
+
+    color: transparent;
+
+  }
+
+  .mySlides {display: none;
+    background-color: #fff;
+    padding: 6px;}
+    .mySlides img {vertical-align: middle;
+      max-width: 490px;
+      max-height: 390px;
+    }
+  .slideshow-container {
+    max-width: 490px;
+    max-height: 390px;
+    position: relative;
+    margin: auto;
+    top: 4%;
+
+  }
+
+  .prev, .next {
+    top: 50%;
+    padding: 10px;
+    margin-top: -2px;
+    color: white;
+    font-size: 12px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 1px;
+    border-radius: 25%;
+    margin-top: 50px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .about{
+    height: 1200px;
+    width: 100%;
+    background-color: #222;
+
+  }
+
+  .head{
+    font-size: 3.4em;
+  }
+
+  .para{
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.4em;
+    font-family: 'Mulish', sans-serif;
+
+  }
+  .container img{
+    display: inline-block;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    margin-left: -230px;
+    height: 330px;
+    width: 460px;
+    background-color: #fff;
+    padding: 1.5px;
+  }
+
+
+  .lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: 450px;
+    margin-left: -35px;
+  }
+  .menu{
+    height: 70px;
+  }
 }
 
 
@@ -639,6 +1016,7 @@ img {vertical-align: middle;
   }
     .cards
     {
+      margin-top: 250px;
       width: 100%;
       flex-direction: column;
       align-items: center;
@@ -658,6 +1036,17 @@ img {vertical-align: middle;
     .about p{
       font-size: 10px;
     }
+    .container img{
+      display: inline-block;
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      margin-left: -195px;
+      height: 240px;
+      width: 395px;
+      background-color: #fff;
+      padding: 1.5px;
+    }
 }
 
 
@@ -666,17 +1055,261 @@ img {vertical-align: middle;
 {
   .btn
   {
-      font-size: 8px;
+      font-size: 15px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
   }
   .btn3{
-    font-size: 6px;
+    font-size: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
   }
+  .container p{
+    font-size: 3vw;
+    display: inline-block;
+    position: absolute;
+    text-shadow: 0 -20px transparent, 0 0px #404242;
+    text-decoration: none;
+    position: absolute;
+    top: 550px;
+    left: 24%;
+    animation: fadeinSUB 3s;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+  }
+  .fa-angle-down {
+
+  font-size: 3rem;
+
+  text-shadow: 0 -20px transparent, 0 0px white;
+
+  top: 700px;
+    left: 48%;
+
+
+  }
+
+
+  .fa-angle-down:hover{
+
+    text-shadow: 0 0px white, 0 40px transparent;
+
+    color: transparent;
+
+  }
+
+  .mySlides {display: none;
+    background-color: #fff;
+    padding: 6px;}
+    .mySlides img {vertical-align: middle;
+      max-width: 490px;
+      max-height: 390px;
+    }
+  .slideshow-container {
+    max-width: 490px;
+    max-height: 390px;
+    position: relative;
+    margin: auto;
+    top: 4%;
+
+  }
+
+  .prev, .next {
+    top: 50%;
+    padding: 10px;
+    margin-top: -2px;
+    color: white;
+    font-size: 12px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 1px;
+    border-radius: 25%;
+    margin-top: 50px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .about{
+    height: 900px;
+    width: 100%;
+    background-color: #222;
+
+  }
+
+  .head{
+    font-size: 3.2em;
+  }
+
+  .para{
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.1em;
+    font-family: 'Mulish', sans-serif;
+
+  }
+  .container img{
+    display: inline-block;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    margin-left: -230px;
+    height: 330px;
+    width: 460px;
+    background-color: #fff;
+    padding: 1.5px;
+  }
+
+
+  .lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: 450px;
+    margin-left: -35px;
+  }
+
+
+}
+
+
+@media (max-width:480px)
+{
+
+    .container p{
+      font-size: 3vw;
+      display: inline-block;
+      position: absolute;
+      text-shadow: 0 -20px transparent, 0 0px #404242;
+      text-decoration: none;
+      position: absolute;
+      top: 49%;
+      left: 23.5%;
+      animation: fadeinSUB 3s;
+      color: white;
+      font-family: 'Mulish', sans-serif;
+    }
+    .fa-angle-down {
+
+    font-size: 3rem;
+
+    text-shadow: 0 -20px transparent, 0 0px white;
+
+    top: 58%;
+      left: 46%;
+
+
+    }
+
+
+
+
+
+    .fa-angle-down:hover{
+
+      text-shadow: 0 0px white, 0 40px transparent;
+
+      color: transparent;
+
+    }
+
+    .mySlides {display: none;
+      background-color: #fff;
+      padding: 6px;}
+      .mySlides img {vertical-align: middle;
+        max-width: 300px;
+        max-height: 200px;
+      }
+    .slideshow-container {
+      max-width: 300px;
+      max-height: 200px;
+      position: relative;
+      margin: auto;
+      top: 4%;
+
+    }
+
+    .prev, .next {
+      top: 50%;
+      padding: 4px;
+      margin-top: -2px;
+      color: white;
+      font-size: 5px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+
+
+    .dot {
+      height: 5px;
+      width: 5px;
+      margin: 0 1px;
+      border-radius: 25%;
+      margin-top: 14px;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    .about{
+      height: 272px;
+      width: 100%;
+      background-color: #222;
+
+    }
+
+    .head{
+      font-size: 2em;
+    }
+
+    .para{
+      margin-top: 5px;
+      margin-left: 30px;
+      margin-right: 30px;
+      font-size: .6em;
+      font-family: 'Mulish', sans-serif;
+
+    }
+    .container img{
+      display: inline-block;
+      position: absolute;
+      top: 11%;
+      left: 50%;
+      margin-left: -135px;
+      height: 190px;
+      width: 270px;
+      background-color: #fff;
+      padding: 1.5px;
+    }
+
+
+    .lds-grid {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+      top: 50%;
+      left: 50%;
+      margin-top: 250px;
+      margin-left: -35px;
+    }
+
     .cards .card
     {
       max-width: 300px;
@@ -685,39 +1318,212 @@ img {vertical-align: middle;
       border-radius: 0;
       box-shadow: none;
     }
-    .cards .card .imgBox
-    {
-      position: relative;
-      border-radius: 0;
-      box-shadow: none;
-    }
     .cards .card .imgBox,
     .cards .card:hover .imgBox
     {
       width: 100%;
-      height: 200px;
+      height: 120px;
       left: 0;
     }
-    .cards .card .imgBox img,
-    .cards .card:hover .imgBox img
-    {
-      max-width: 100px;
+
+    .cards .card .content h1{
+      margin-bottom: 5px;
+      font-size: 16px;
     }
-    .cards .card .content
-    {
-      position: relative;
-      width: 100%;
+
+    .cards .card .content p{
+      margin-bottom: 5px;
+      font-size: 12px;
     }
-    .about p{
-      font-size: 8px;
+    .cards .card6 .imgBox img{
+      max-width: 200px;
+      max-height: 200px;
+      transition: 0.5s ease-in-out;
     }
-    .open{
-      /*please git work*/
-      background-image: url("BTbg.png");
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw 100vh;
-      min-height: 130vh;
+    .cards .card6:hover .imgBox img{
+      max-width: 200px;
+      max-height: 200px;
+      transition: 0.5s ease-in-out;
     }
+}
+
+
+@media (max-width:320px)
+{
+
+  .container p{
+    font-size: 3vw;
+    display: inline-block;
+    position: absolute;
+    text-shadow: 0 -20px transparent, 0 0px #404242;
+    text-decoration: none;
+    position: absolute;
+    top: 49%;
+    left: 23%;
+    animation: fadeinSUB 3s;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+  }
+  .fa-angle-down {
+
+  font-size: 3rem;
+
+  text-shadow: 0 -20px transparent, 0 0px white;
+
+  top: 58%;
+    left: 45%;
+
+
+  }
+
+
+
+
+
+  .fa-angle-down:hover{
+
+    text-shadow: 0 0px white, 0 40px transparent;
+
+    color: transparent;
+
+  }
+
+  .mySlides {display: none;
+    background-color: #fff;
+    padding: 6px;}
+    .mySlides img {vertical-align: middle;
+      max-width: 210px;
+      max-height: 130px;
+    }
+  .slideshow-container {
+    max-width: 210px;
+    max-height: 130px;
+    position: relative;
+    margin: auto;
+    top: 4%;
+
+  }
+
+  .prev, .next {
+    top: 50%;
+    padding: 4px;
+    margin-top: -2px;
+    color: white;
+    font-size: 5px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+
+  .dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 1px;
+    border-radius: 25%;
+    margin-top: 14px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .about{
+    height: 212px;
+    width: 100%;
+    background-color: #222;
+
+  }
+
+  .head{
+    font-size: 2em;
+  }
+
+  .para{
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 0.5em;
+    font-family: 'Mulish', sans-serif;
+
+  }
+  .container img{
+    display: inline-block;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    margin-left: -98px;
+    height: 120px;
+    width: 195px;
+    background-color: #fff;
+    padding: 1.5px;
+  }
+
+
+  .lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: 180px;
+    margin-left: -35px;
+  }
+
+  .cards .card
+  {
+    max-width: 200px;
+    flex-direction: column;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .cards .card .imgBox,
+  .cards .card:hover .imgBox
+  {
+    width: 100%;
+    height: 100px;
+    left: 0;
+  }
+
+  .cards .card .content h1{
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+
+  .cards .card .content p{
+    margin-bottom: 5px;
+    font-size: 8px;
+  }
+  .cards .card3 .imgBox img{
+    max-width: 60px;
+    max-height: 60px;
+    transition: 0.5s ease-in-out;
+  }
+  .cards .card3:hover .imgBox img{
+    max-width: 60px;
+    max-height: 60px;
+    transition: 0.5s ease-in-out;
+  }
+  .cards .card5 .imgBox img{
+    max-width: 75px;
+    max-height: 60px;
+    transition: 0.5s ease-in-out;
+  }
+  .cards .card5:hover .imgBox img{
+    max-width: 75px;
+    max-height: 60px;
+    transition: 0.5s ease-in-out;
+  }
+  .cards .card6 .imgBox img{
+    max-width: 140px;
+    max-height: 140px;
+    transition: 0.5s ease-in-out;
+  }
+  .cards .card6:hover .imgBox img{
+    max-width: 140px;
+    max-height: 140px;
+    transition: 0.5s ease-in-out;
+  }
 }
