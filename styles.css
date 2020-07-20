@@ -76,7 +76,7 @@ html{
 background-image: url("background.png");
   background-attachment: fixed;
 
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
 
   min-height: 1008px;
   min-height: -webkit-fill-available;
