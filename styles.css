@@ -1096,6 +1096,9 @@ top: 700px;
       border-radius: 0;
       box-shadow: none;
     }
+    .cards .card:hover .imgBox{
+      left: -140px;
+    }
     .about p{
       font-size: 10px;
     }
