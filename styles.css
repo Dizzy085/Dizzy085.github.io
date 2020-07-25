@@ -1121,7 +1121,7 @@ top: 700px;
       height: 70px;
     }
     .visibledesktop {
-      background-size: 100% 150%;
+      background-size: 100% 120%;
     }
 }
 
@@ -1130,7 +1130,7 @@ top: 700px;
 @media (max-width: 768px)
 {
   .visibledesktop {
-    background-size: 100% 150%;
+    background-size: 100% 120%;
   }
   .container{
     height: 550px;
@@ -1305,7 +1305,7 @@ top: 700px;
 @media (max-width:480px)
 {
   .visibledesktop {
-    background-size: 100% 150%;
+    background-size: 100% 120%;
   }
     .container{
       height: 350px;
@@ -1511,7 +1511,7 @@ top: 700px;
 @media (max-width:320px)
 {
   .visibledesktop {
-    background-size: 100% 150%;
+    background-size: 100% 120%;
   }
 .container{
   height: 320px;
