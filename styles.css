@@ -1055,12 +1055,23 @@ top: 700px;
   .menu{
     height: 70px;
   }
+  .cards .card .content
+  {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
 }
 
 
 @media (max-width: 992px)
 {
-
+  .cards .card .content
+  {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
   .btn
   {
       font-size: 17px;
@@ -1294,7 +1305,8 @@ top: 700px;
   .cards .card .content
   {
     position: relative;
-    width: 100%;
+    width: auto;
+    height: auto;
   }
   .about1{
     height: 70px;
@@ -1458,7 +1470,8 @@ top: 700px;
     .cards .card .content
     {
       position: relative;
-      width: 100%;
+      width: auto;
+      height: auto;
     }
     .cards .card .content h1{
       margin-bottom: 5px;
@@ -1666,7 +1679,8 @@ top: 700px;
   .cards .card .content
   {
     position: relative;
-    width: 100%;
+    width: auto;
+    height: auto;
   }
 
   .cards .card .content h1{
