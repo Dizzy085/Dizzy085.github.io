@@ -72,16 +72,7 @@ html{
 
 
 
-.visibledevice {display:none;}
-.visibledesktop {display:display;
-background-image: url("background.png");
-  background-attachment: fixed;
 
-  background-size: 100% 100%;
-
-  min-height: 1008px;
-  min-height: -webkit-fill-available;
-}
 /*
 @media (max-width : 320px) {
     .visibledevice {display:block;
@@ -142,6 +133,7 @@ left: 49%;
 
 
 
+
 .menu{
   height: 100px;
   width: 100%;
@@ -177,7 +169,9 @@ left: 49%;
 
 
 
-
+.container1{
+  height: 1000px;
+}
 
 #loader{
   background-color: #252526;
@@ -580,10 +574,7 @@ IF YOU CHOOSE TO ADD A READ MORE PART TO THE CARDS
     width: 780px;
     padding: 6px;
   }
-  .visibledesktop {
-    background-size: 100vw 100vh;
-    min-height: 1000px;
-  }
+
   .fa-angle-down {
   top: 840px;
   }
@@ -593,7 +584,7 @@ IF YOU CHOOSE TO ADD A READ MORE PART TO THE CARDS
 
 @media (max-width:1700px)
 {
-  .container{
+  .container1{
     height: 800px;
   }
   .btn
@@ -759,7 +750,7 @@ top: 700px;
   .about1{
     height: 70px;
   }
-  .container{
+  .container1{
     height: 750px;
   }
   .btn
@@ -910,7 +901,7 @@ top: 700px;
 
 @media (max-width:1200px)
 {
-  .container{
+  .container1{
     height: 680px;
   }
   .about1{
@@ -1109,7 +1100,7 @@ top: 700px;
       font-size: 10px;
     }
 
-    .container{
+    .container1{
       height: 580px;
     }
     .container img{
@@ -1132,19 +1123,15 @@ top: 700px;
     .about1{
       height: 70px;
     }
-    .visibledesktop {
-      background-size: 100% 101%;
-    }
+
 }
 
 
 
 @media (max-width: 768px)
 {
-  .visibledesktop {
-    background-size: 100% 101%;
-  }
-  .container{
+
+  .container1{
     height: 550px;
   }
   .btn
@@ -1317,10 +1304,8 @@ top: 700px;
 
 @media (max-width:480px)
 {
-  .visibledesktop {
-    background-size: 100% 101%;
-  }
-    .container{
+
+    .container1{
       height: 350px;
     }
     .container p{
@@ -1513,9 +1498,7 @@ top: 700px;
       max-height: 140px;
       transition: 0.5s ease-in-out;
     }
-    .visibledesktop {
-      min-height: 500px;
-    }
+
     .about1{
       height: 80px;
     }
@@ -1524,10 +1507,8 @@ top: 700px;
 
 @media (max-width:320px)
 {
-  .visibledesktop {
-    background-size: 100% 101%;
-  }
-.container{
+
+.container1{
   height: 320px;
 }
   .container p{
